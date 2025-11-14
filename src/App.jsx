@@ -3,6 +3,13 @@ import './App.css'
 function App() {
 
 
+    const user = {
+        firstName: "David",
+        lastName: "Robert",
+        age: 35
+
+    }
+
     const articles = [
         {
             id: 1,
@@ -21,9 +28,16 @@ function App() {
         }
     ]
 
+    const displayFullName = () => {
+        return user.firstName + " " + user.lastName;
+    }
 
   return (
     <>
+
+        <header>
+            <h1>Welcome, {displayFullName()}!</h1>
+        </header>
 
         <section>
 
